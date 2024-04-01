@@ -3,13 +3,14 @@ PRODID:-//HAC Orators Toastmasters//iCal4j 4.0//EN
 CALSCALE:GREGORIAN
 VERSION:2.0
 BEGIN:VEVENT
-DTSTAMP:20240401T162758Z
+DTSTAMP:20240401T232802Z
 DTSTART:20240409T190000
 DURATION:PT2H
 SUMMARY:HAC Orators Toastmasters
 TZID:Europe/London
-UID:fe6e42db-7d56-4c43-9fe6-6683f9c153b8
+UID:c549401e-5d00-4d16-aba8-b8a27cdfc52f
 RRULE:FREQ=MONTHLY;COUNT=25;BYDAY=2TU,4TU
+URL:https://www.hacorators.org.uk
 LOCATION:Armoury House\, City Rd\, London\, EC1Y 2BQ
 CONFERENCE:https://us06web.zoom.us/j/84302627579?pwd=VklHcDhBTXBnTHpQRlBnQmU0R01SUT09
 DESCRIPTION:Meeting opens at 7pm for a 7:15pm start.  You can attend either online or in person.\n\nIf attending in person\, we meet at The HAC\, Armoury House\, City Rd\, London\, EC1Y 2BQ in the Medal Room.  Enter through the east gate (looks like castle gates\; opposite the Tesco Express)\; photo ID will be required.  Due to traditions of our host location there is a dress code\, gents are expected to wear a jacket and tie\; and formal or work attire for ladies.\n\nIf attending virtually\, there is no dress code.  The meeting will be on Zoom and you can connect with the following details:\n\nLink: https://us06web.zoom.us/j/84302627579?pwd=VklHcDhBTXBnTHpQRlBnQmU0R01SUT09\nMeeting ID: 843 0262 7579\nPasscode: 878489
