@@ -1,0 +1,226 @@
+:root {
+	--tm-blue: #004165;
+	--tm-red: #772432;
+	--tm-yellow: #F2DF74;
+	--tm-white: #FFFFFF;
+	--bg-main: #f4f4f4;
+	--bg-alt: #e4e4e4;
+	--fg-main: #0a0a0a;
+}
+
+html {
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+}
+
+body {
+	font-family: 'Source Sans 3', 'Helvetica', 'Arial', sans-serif;
+	font-size: 1em;
+	margin: 0;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	color: var(--fg-main);
+	background-color: var(--bg-main);
+}
+
+header, main, footer {
+	display: grid;
+	grid-template-columns: 1fr min(90ch, 100%) 1fr;
+}
+
+.centre {
+	padding: 15px 20px;
+	grid-column: 2;
+}
+
+.full-width {
+	grid-column: 1 / 4;
+}
+
+.cover-image {
+	z-index: -1;
+	line-height: 0;
+	box-shadow: 0px 4px 10px #00000050;
+}
+
+.cover-image img {
+	max-width: 100%;
+	min-width: 100%;
+	object-fit: cover;
+	height: 60vh;
+	width: auto;
+}
+
+.skip-link {
+	position: absolute;
+	text-align: center;
+	top: 0;
+	right: 100%;
+}
+
+main { flex: auto; }
+main .centre {
+	margin-top: -10px;
+}
+
+footer .centre {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+a { color: var(--tm-blue); }
+a:hover { color: var(--tm-red); }
+
+header {
+	background: var(--tm-blue);
+	box-shadow: 0px 5px 10px #00000050;
+}
+
+footer {
+	background-color: var(--bg-alt);
+	box-shadow: inset 2px 0px 8px #00000030;
+}
+
+header nav {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	gap: 10px;
+}
+
+header nav a { color: var(--tm-white); }
+header nav a:hover { color: var(--tm-yellow); }
+
+.branding img {
+	height: 6em;
+	margin-top: -0.3em;
+	margin-bottom: -0.3em;
+	vertical-align: bottom;
+	/* Hide artefacting by forcing all colour to pure white. */
+	filter: grayscale(100%) brightness(100%) saturate(0%);
+}
+
+.branding:hover {
+	/* CSS magic to convert the image to the TM yellow on hover. https://codepen.io/sosuke/pen/Pjoqqp */
+	filter: grayscale(100%) brightness(0) saturate(100%)	/* Convert to pure black. */
+					invert(90%) sepia(97%) saturate(6031%) hue-rotate(311deg) brightness(120%) contrast(90%);
+}
+
+header nav ul {
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	padding: 0;
+	margin: 0 0 0 -20px;
+	align-items: center;
+}
+
+header nav ul li {
+	height: 100%;
+	margin-left: 20px;
+	font-size: 1.1em;
+	font-weight: 600;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Montserrat', 'Helvetica', 'Arial';
+	margin-bottom: 0;
+}
+
+h1 {
+	font-size: 2.3em;
+}
+h2 {
+	font-size: 1.8em;
+	margin-top: 40px;
+}
+h3 {
+	font-size: 1.6em;
+	margin-top: 40px;
+}
+h4 {
+	font-size: 1.4em;
+	margin-top: 20px;
+}
+h5 {
+	font-size: 1.2em;
+	margin-top: 20px;
+}
+h6 {
+	font-size: 1.1em;
+	margin-top: 20px;
+}
+
+main li { margin-top: 4px; }
+
+abbr { cursor: help; }
+
+.banner {
+	color: var(--banner-text);
+	font-weight: 500;
+	line-height: 2em;
+	text-align: center;
+	box-shadow: inset 2px 0px 10px #00000030;
+	background: repeating-linear-gradient(
+		45deg,
+		var(--banner-1),
+		var(--banner-1) 10px,
+		var(--banner-2) 10px,
+		var(--banner-2) 20px);
+}
+
+:root {
+	--banner-1: var(--tm-red);
+	--banner-2: #773b23;
+	--banner-text: var(--tm-white);
+}
+
+.construction {
+	--banner-1: #e6b400;
+	--banner-2: #e6cc00;
+	--banner-text: var(--tm-black);
+}
+
+details {
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  padding: 0.5em 0.5em 0;
+  background-color: var(--bg-alt);
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+summary {
+	cursor: zoom-in;
+  font-weight: 600;
+	font-size: 1.1em;
+  margin: -0.5em -0.5em 0;
+  padding: 0.5em;
+	background-color: #cecece;
+	font-family: 'Montserrat', 'Helvetica', 'Arial';
+  border-radius: 4px;
+}
+
+summary:hover {
+	box-shadow: inset 0px 3px 10px #00000030;
+}
+
+details[open] {
+  padding: 0.5em;
+}
+
+details[open] summary {
+  border-bottom: 1px solid #aaa;
+  margin-bottom: 0.5em;
+}
+
+.map-box {
+	margin-top: 7px;
+	margin-bottom: 7px;
+	border: 2px var(--bg-alt) solid;
+	border-radius: 10px;
+	overflow: hidden;
+}
