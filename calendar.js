@@ -38,9 +38,9 @@ function populateTable(dates) {
     })
 }
 
-Promise.resolve(fetch('/meetings.ics')
+fetch('/meetings.ics')
     .then(r => r.text())
     .then(ICAL.parse)
     .then(extractVEvent)
     .then(upcomingMeetings)
-    .then(populateTable))
+    .then(populateTable)
