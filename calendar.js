@@ -1,4 +1,3 @@
-// jQuery-like selectors.
 function $(sel, elem = document) { return elem.querySelector(sel) }
 function $$(sel, elem = document) { return elem.querySelectorAll(sel) }
 
