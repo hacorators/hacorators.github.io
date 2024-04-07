@@ -224,3 +224,27 @@ details[open] summary {
 	border-radius: 10px;
 	overflow: hidden;
 }
+
+:root {
+  --tbl-border:  #e1e1e1;
+  --tbl-row-alt: #eaeaea;
+}
+
+table {
+  border: 2px solid var(--tbl-border);
+  border-collapse: collapse;
+	border-radius: 10px;
+}
+
+tr:nth-child(even) {
+  background-color: var(--tbl-row-alt);
+}
+
+th {
+  background-color: var(--tbl-border);
+}
+
+th, td {
+  padding: 5px 15px;
+  border: 2px solid var(--tbl-border);
+}

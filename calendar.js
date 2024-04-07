@@ -17,7 +17,7 @@ function upcomingMeetings(vevent) {
         next = getNext()
     } while (next.getTime() < today.getTime())
 
-    return [next, getNext(), getNext()]
+    return [next, getNext(), getNext(), getNext()]
 }
 
 function populateTable(dates) {
