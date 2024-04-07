@@ -93,6 +93,8 @@ header nav {
 
 header nav a { color: var(--tm-white); }
 header nav a:hover { color: var(--tm-yellow); }
+header nav a.on-page { color: var(--tm-yellow); }
+header nav a.on-page:hover { text-shadow: var(--tm-yellow) 1px 0 15px; }
 
 .branding img {
 	height: 6em;
