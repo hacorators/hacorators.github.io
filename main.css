@@ -57,6 +57,7 @@ header, main, footer {
 	text-align: center;
 	top: 0;
 	right: 100%;
+	color: var(--tm-white);
 }
 
 main { flex: auto; }
