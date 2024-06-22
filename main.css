@@ -42,6 +42,7 @@ header, main, footer {
 	z-index: -1;
 	line-height: 0;
 	box-shadow: 0px 4px 10px #00000050;
+	margin-bottom: -1px;  /* Remove 1px from the bottom to remove a white line below the image on mobile. */
 }
 
 .cover-image img {
