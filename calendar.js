@@ -10,7 +10,7 @@ function upcomingMeetings(vevent) {
         component: vevent,
         dtstart: vevent.getFirstPropertyValue('dtstart')
     })
-    const getNext = () => re.next().toJSDate()
+    const getNext = () => re.next()?.toJSDate()
     const today = new Date()
 
     let next; do {
